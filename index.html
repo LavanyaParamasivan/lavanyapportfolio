@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Website-Lavanya</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script/script.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('3-b667Aj0OlNr__Z-');
+        })();
+    </script>
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            // ValidateEmail(document.contact - form.user_email);
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_wc6hig3', 'template_xizfzdb', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        myFunction();
+                        //alert('Mail sent successfully');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+
+                    });
+            });
+        }
+      
+
+    </script>
+</head>
+
+<body>
+    <div id="snackbar">Your Message Sent Successfully</div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll navbarDark">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">Lavanya</a> -->
+            <div class="text-right">
+                <a href="#" class="btn btn-success resume" onclick="pdf()">Download Resume</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto " >
+                    <li class="nav-item active " >
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage " id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <!-- <div class="text-center">
+                        <a href="#" class="btn btn-success" onclick="pdf()">Download Resume</a>
+                    </div> -->
+                    <!-- <h2 class="hero_title">Hi, it's me Brad</h2>
+                <p class="hero_desc">I am a professional freelancer in New York City</p> -->
+                <div class="banner-container">
+                  
+                    <div class="banner-name ">
+                      <span class="multitext nametxt"></span><br>
+                    </div>
+                      <div class="banner-text">
+                      <span class="posttxt">Senior Front End Developer</span><br/><br/>
+                      <span class="taglinetxt">An accomplished senior front end developer delivering exceptional results with precision and efficiency.</span>
+                    </div>
+               
+                        <div class="dw text-center" onclick="about()" ><i class="fas downarrow fa-regular fa-chevron-down "></i></div>
+                
+                   
+                  
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <div class="maincontainer">
+
+    <!-- about section-->
+    <section id="about" class="aboutme">
+        
+        <div class="container reveal mt-4 pt-4">
+            <h1 class="text-center titletxt">About Me</h1>
+            <div class="row mt-4"> 
+              
+                <div class="col-lg-12">
+                   
+                    <p class="hero_desc aboutmetxt lineUp">I am a dedicated  <span style="font-weight:bold;">Frontend Developer</span> with eight years of multinational company experience, specializing in building and managing the frontend of websites and web applications. Recently, I've expanded my skills into UX design, integrating design principles and utilizing tools like Figma and Adobe.
+                      
+Feel invited to delve into my projects and discover  examples of my work. I am currently open to job opportunities where I can continue to learn, grow, and contribute my skills. For more details about my work history and skills, feel free to download my resume and connect with me on <a  target="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/in/plavanya/"  style="color: #198754;">LinkedIn</a></p>
+                   
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <script>
+        window.addEventListener('scroll',reveal);
+function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for(var i= 0;i<reveals.length;i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint= 50;
+        if(revealtop <windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+    </script>
+    <section id="services" class="techskills" >
+        <div class="container reveal mt-4 pt-4">
+            <h1 class="text-center titletxt">Technical Skills</h1>
+            <div class="row "> 
+            <div class="col-lg-12 ">
+                <p class="hero_desc  aboutmetxt lineUp">
+                    With over eight years of expertise, I've crafted robust web applications for clients across the APAC region. Here's a glimpse of my core technical proficiencies and preferred tools. For further insights into my background, kindly refer to my resume.</p>
+            </div>
+            </div>
+            </div>
+   
+                
+            <div class="container reveal  mt-4">
+                <div class="row ">
+                  <div class="col-sm-4 p-2">
+                    <div class="card">
+                      
+                        <div class="container">
+                            <i class='fas servicesIcon  fa-layer-group mt-4'></i>
+                          <h4 class="text-center mt-2">UI/UX Design</h4> 
+                          <p class="card-text mt-3">
+                            <ul class="whitebackgrnd">
+                                <li style="color: #212529;">
+                                    <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i>  UX Research
+                                    </li> 
+                                <li style="color: #212529;">
+                                    <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i>  Wireframing / Prototyping
+                                </li>
+                                <li style="color: #212529;">
+                                    <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i>  Mock-ups / Userflows
+                                </li>
+                                <li style="color: #212529;">
+                                    <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i>   Information Architecture
+                              </li >
+                              <li style="color: #212529;">
+                                <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> Knowledge of Coding and App &nbsp;&nbsp;Development
+                          </li>
+                          <li style="color: #212529;">
+                            <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i>   User Testing
+                       </li>
+                               </ul>
+                  </p>
+                        </div>
+                      
+                
+                      
+                      </div>
+                  </div>
+                  <div class="col-sm-4 p-2">
+                    <div class="card">
+                      
+                        <div class="container">
+                            <i class="fas servicesIcon fa-file-code mt-4"></i>
+                          <h4 class="text-center mt-2">Front End</h4> 
+                          <p class="card-text mt-3">
+                            <ul class="whitebackgrnd">
+                               
+                                    <li style="color: #212529;">
+                                        <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i>  Angular
+                                    <li style="color: #212529;">
+                                        <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> React
+                                    </li>
+                                    <li style="color: #212529;">
+                                        <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> JavaScript
+                                  </li>
+                                  <li style="color: #212529;">
+                                    <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> HTML / CSS / SCSS / SASS / LESS
+                              </li>
+                              <li style="color: #212529;">
+                                <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> API Integration
+                          </li>
+                          <li style="color: #212529;">
+                            <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> Responsive Design
+                      </li>
+                                   </ul>
+                             
+                  </p>
+                        </div>
+                      
+                
+                      
+                      </div>
+                  </div>
+                  <div class="col-sm-4 p-2">
+                    <div class="card">
+                      
+                        <div class="container">
+                            <i class='fas servicesIcon fa-shield-alt mt-4'></i>
+                          <h4 class="text-center mt-2">Others</h4> 
+                          <p class="card-text mt-3">
+                            <ul class="whitebackgrnd">
+                           
+                                    <li style="color: #212529;">
+                                        <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> MySQL / SQL Server
+                                    </li>
+                                    <li style="color: #212529;">
+                                        <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> Git / Bitbucket / Jenkins
+                                    </li>
+                                    <li style="color: #212529;">
+                                        <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> CI / CD
+                                    </li>
+                                    <li style="color: #212529;"> 
+                                        <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i>  Unit testing
+                                  </li>
+                                  <li style="color: #212529;">
+                                    <i class="fas servicesIcon fa-check checkicon" style='font-size:18px;font-weight: 2px;color:#198754;padding: 10px 20px;'></i> Netlify, Render
+                              </li>
+                                   </ul>  
+                               
+                  </p>
+                        </div>
+                      
+                
+                      
+                      </div>
+                  </div>
+                </div>
+              </div>
+             
+       
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio" class="portfolio" >
+        <div class="container mt-5 reveal">
+            <h1 class="text-center titletxt">Portfolio</h1>
+            <div class="row">
+              <div class="col-sm-4 p-2">
+                <div class="card">
+                    <img src="images/ColorPalette.png" class="imgportfolio" alt="card image" style="width:100%">
+                    <div class="container">
+                      <h4 class="text-center mt-2 portfoliotitle ">ColorPalette</h4> 
+                      <h5 class="text-center mt-2 portfoliosubtitle">UX Design</h5> 
+                      <p  style="color:#212529" class="mt-2 text-center portfoliotxt">
+                                
+                        Artist Bio App UX Design project aimed to enhance user engagement and connectivity.</p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a href="colorpallete.html" class="btn btn-success readbtn">Read More</a>
+                    </div>
+            
+                  
+                  </div>
+              </div>
+              <div class="col-sm-4 p-2">
+                <div class="card">
+                    <img src="images/healthcare.png" class="imgportfolio" alt="card image" style="width:100%">
+                    <div class="container">
+                      <h4 class="text-center mt-2 portfoliotitle">HealthCare</h4> 
+                      <h5 class="text-center mt-2">Angular Web Page</h5> 
+                      <p  style="color:#212529" class="mt-2 text-center portfoliotxt">
+                                
+                        A user-friendly health services booking platform developed using Angular.</p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a href="healthcare.html" class="btn btn-success readbtn">Read More</a>
+                    </div>
+            
+                  
+                  </div>
+              </div>
+              <div class="col-sm-4 p-2">
+                <div class="card">
+                    <img src="images/ketzart.png" class="imgportfolio" alt="card image" style="width:100%">
+                    <div class="container">
+                      <h4 class="text-center mt-2 portfoliotitle">KetzArt</h4> 
+                      <h5 class="text-center mt-2">ReactJS Web Page</h5> 
+                      <p  style="color:#212529" class="mt-2 text-center portfoliotxt">
+                                
+                        An immersive art bidding website built with ReactJS.</p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <a href="ketzart.html" class="btn btn-success readbtn" >Read More</a>
+                    </div>
+            
+                  
+                  </div>
+              </div>
+            </div>
+          </div>
+      
+    
+    </section>
+
+    <!-- contact section-->
+    <section id="contact" class="techskills">
+        <div class="container reveal mt-4 pt-4 ">
+          
+
+            <div class="row mt-4">
+               
+                 
+
+                <div class="col-lg-6 mt-2 p-2 contactme">
+                 
+                    <h1 class="text-center titletxt">Contact Me</h1>
+                    <form id="contact-form" class="formcontainer">
+                        <input type="hidden" name="contact_number">
+                        <label class="contactmetxt" for="name">Name</label>
+                        <input type="text" class="contact__form-input" required autocomplete="off" placeholder="Enter Your Name" name="user_name">
+                        <label class="contactmetxt" for="email">Email</label>
+                        <input type="email" class=" contact__form-input" autocomplete="off" required placeholder="Enter Your Email" name="user_email">
+                        <label class="contactmetxt" for="message">Message</label>
+                        <textarea name="message" class="txtarea contact__form-input" autocomplete="off" required placeholder="Enter Your Message"></textarea>
+                        <input type="submit" class="btn btn-success  contactmebtn"  value="Send mail">
+                    </form>
+                
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="arrow" style="text-align: center;color: #908b8b">
+            <a href="#" > <i class="fas uparrow fa-solid fa-arrow-up container " style="color: #908b8b !important;"></i></a><span >
+        Back Home
+            </span>
+        </div>
+      
+    </section>
+  </div>
+    <!-- footer section-->
+    <footer id="footer">
+       
+      
+        
+      
+        <div class="main-footer__lower ">
+            <div>
+            <a target="_blank"  rel="noopener noreferrer" href="https://www.linkedin.com/in/plavanya/" ><img class="main-footer__icon" src="images/linkedin.png" alt="Lavanya Linkedin Profile"></img></a>
+            </div>
+          
+           
+     
+          <span style="font-size: small;"> <script >document.write(new Date().getFullYear())</script></span> <span style="font-size: small;">Designed by </span> 
+            <a rel="noreferrer" target="_blank" href="#" style="font-size: small;color: #198754;">LavanyaParamasivan</a>
+          </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typingeffect= new Typed(".multitext",{
+        strings:["Lavanya Paramasivan","Lavanya Paramasivan","Lavanya Paramasivan"],
+        loop:true,
+        typeSpeed:100,
+        backSpeed:80,
+        backDelay:1500
+    })
+    function myFunction() {
+        document.getElementById("contact-form").reset();
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+function about(){
+    window.location.href="index.html#about"
+}
+$(function(){ 
+     var navMain = $(".navbar-collapse"); // avoid dependency on #id
+     // "a:not([data-toggle])" - to avoid issues caused
+     // when you have dropdown inside navbar
+     navMain.on("click", "a:not([data-toggle])", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+</script>
+
+</body>
+
+</html>

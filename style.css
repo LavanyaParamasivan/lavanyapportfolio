@@ -1,0 +1,1103 @@
+    /* display background color black on navbar scroll */
+    
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    .navbarScroll.navbarDark {
+        background-color: black;
+    }
+
+    
+    * {
+        box-sizing: border-box;
+        font-family: "Montserrat";
+    }
+    .container{
+    
+        max-width: 100%;
+        height: auto;
+  
+     
+    }
+    .maincontainer{
+        max-width: 100%;
+        height: auto;
+    }
+    @media (min-width: 901px) and (max-width: 1199px)  {
+        .contactmebtn{
+            margin-left: 7% !important;
+            width:50% !important;
+            padding:1rem !important;
+            margin-top: 3.35rem!important;
+        }
+        .banner-name {
+            position: absolute;
+            margin-top: -5% !important;
+            line-height: 1 !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+          }
+          .banner-text {
+            position: absolute;
+            margin-top: -5% !important;
+            line-height: 1 !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+          }
+          .nametxt{
+            font-size: 35px !important;
+            color: #000!important;
+            padding-top: 5px !important;
+            text-shadow: none;
+        
+           }
+           .posttxt{
+             font-size: 22px !important;color: #000 !important;padding-top: 12px  !important;text-shadow: none;
+           }
+           .taglinetxt{
+             font-size: 14px !important;color: #000 !important;padding-top: 14px !important;text-shadow: none;
+           }
+           .hero_desc {
+            font-size: 0.75rem !important;
+        }
+        .aboutme{
+            height: 100vh !important; 
+            background-size: cover; 
+            align-content: center;
+            justify-content: space-between;
+        }
+        .aboutmetxt{
+            text-align: justify !important;
+         
+        }
+        .titletxt{
+            font-size: 1.5rem !important;
+        }
+        .card{
+            border:1.5px solid rgba(0, 0, 0, .125) !important;
+            border-radius: 10px !important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 5px 0px;
+        height: 100% !important;
+        width: 100% !important;
+   
+          
+        }
+        .card-body{
+            padding: 2.5rem 1rem !important;
+        }
+        .card-text{
+            text-align: center !important;
+           
+        }
+        .whitebackgrnd{
+            color: #000 !important;
+            font-size: 0.75rem !important;
+          
+        }
+        .portfolio{
+            height: auto !important; 
+            background-size: cover; 
+            align-content: center;
+            justify-content: space-between;
+        }
+        
+        .techskills{
+            background: url('images/parallelbakg.png');
+            height: auto !important; 
+            background-size: cover; 
+            align-content: center;
+            height: 100vh;
+      
+            position: relative;
+            background-repeat: no-repeat;
+        }
+        .portfoliotxt{
+            font-size: 0.75rem !important;
+        }
+        .portfoliotitle{
+            font-size: 1.3rem !important; 
+        }
+        .portfoliosubtitle{
+            font-size: 1rem !important; 
+        }
+        .contactmetxt{
+            font-family:  "Montserrat" !important;
+         
+            font-size: 0.75rem !important;
+            letter-spacing: 1px;
+            font-weight: 200;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            display: block;
+            text-align: left;
+        }
+        .contact__form-input {
+ 
+            padding: 1rem !important;
+            width: 100%;
+            font-family: "Montserrat";
+            border: 1px solid #ebebeb;
+            font-size: 0.75rem !important;
+            letter-spacing: 0px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            font-weight: 400 !important;
+        }
+      
+    }
+    @media (min-width: 1200px) and (max-width: 2159px)  {
+         .banner-name {
+            position: absolute;
+            margin-top: -5% !important;
+            line-height: 1 !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+          }
+          .banner-text {
+            position: absolute;
+            margin-top: -5% !important;
+            line-height: 1 !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+          }
+          .nametxt{
+            font-size: 35px !important;
+            color: #000!important;
+            padding-top: 5px !important;
+            text-shadow: none;
+        
+           }
+           .posttxt{
+             font-size: 22px !important;color: #000 !important;padding-top: 12px  !important;text-shadow: none;
+           }
+           .taglinetxt{
+             font-size: 14px !important;color: #000 !important;padding-top: 14px !important;text-shadow: none;
+           }
+           .hero_desc {
+            font-size: 0.75rem !important;
+        }
+        .aboutme{
+            height: 100vh !important; 
+            background-size: cover; 
+            align-content: center;
+            justify-content: space-between;
+        }
+        .aboutmetxt{
+            text-align: justify !important;
+         
+        }
+        .titletxt{
+            font-size: 1.5rem !important;
+        }
+        .card{
+            border:1.5px solid rgba(0, 0, 0, .125) !important;
+            border-radius: 10px !important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 5px 0px;
+        height: 100% !important;
+        width: 100% !important;
+   
+          
+        }
+        .card-body{
+            padding: 2.5rem 1rem !important;
+        }
+        .card-text{
+            text-align: center !important;
+           
+        }
+        .whitebackgrnd{
+            color: #000 !important;
+            font-size: 0.75rem !important;
+          
+        }
+        .portfolio{
+            height: auto !important; 
+            background-size: cover; 
+            align-content: center;
+            justify-content: space-between;
+        }
+        
+        .techskills{
+            background: url('images/parallelbakg.png');
+            height: auto !important; 
+            background-size: cover; 
+            align-content: center;
+            height: 100vh;
+      
+            position: relative;
+            background-repeat: no-repeat;
+        }
+        .portfoliotxt{
+            font-size: 0.75rem !important;
+        }
+        .portfoliotitle{
+            font-size: 1.3rem !important; 
+        }
+        .portfoliosubtitle{
+            font-size: 1rem !important; 
+        }
+        .contactmetxt{
+            font-family:  "Montserrat" !important;
+         
+            font-size: 0.75rem !important;
+            letter-spacing: 1px;
+            font-weight: 200;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            display: block;
+            text-align: left;
+        }
+        .contact__form-input {
+ 
+            padding: 1rem !important;
+            width: 100%;
+            font-family: "Montserrat";
+            border: 1px solid #ebebeb;
+            font-size: 0.75rem !important;
+            letter-spacing: 0px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            font-weight: 400 !important;
+        }
+      
+    }
+    @media screen and (min-width : 0px) and (max-width : 900px){
+        .banner-name {
+            position: absolute;
+            margin-top: -30% !important;
+            line-height: 1 !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+          }
+          .banner-text {
+            position: absolute;
+            margin-top: -15% !important;
+            line-height: 1 !important;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+          }
+        .scene{
+            position: relative;
+            height: 12vh;
+            width: 100% !important;
+      
+         
+            background: linear-gradient(#d8c8f9,#fff);
+        }
+         .scenehc{
+            position: relative;
+            height: 12vh;
+            width: 100% !important;
+    
+            background: linear-gradient(lavenderblush,#fff);
+        }
+        .artbid{
+            font-size: 1.5rem!important;
+        }
+        .skills__skill {
+            padding: 1rem 1rem;
+            margin-bottom: 1.5rem;
+            margin-right: 1.5rem;
+            font-size: 1rem !important;
+            background: rgba(153, 153, 153, 0.2);
+            border-radius: 5px;
+            font-weight: 400 !important;
+            color: #666;
+        }
+        .project-btn{
+            width: 40% !important;
+            margin-top: 3%;
+        }
+        .project-btnfg{
+            width: 40% !important;  
+            margin-top: 3%;
+        }
+        .project-details__content-title{
+            font-size: 1.3rem !important;
+        }
+        .ketzartimg{
+            width: 50%;
+            height:50%;
+            align-content: center;
+            text-align: center;
+            margin-left: 20% !important;
+        }
+        .nametxt{
+            font-size: 35px !important;
+            color: #000!important;
+            padding-top: 5px !important;
+            text-shadow: none;
+        
+           }
+           .posttxt{
+             font-size: 22px !important;color: #000 !important;padding-top: 12px  !important;text-shadow: none;
+           }
+           .taglinetxt{
+             font-size: 14px !important;color: #000 !important;padding-top: 14px !important;text-shadow: none;
+           }
+           .downarrow{
+            font-size: 15px !important;
+            position: absolute;
+            top: 60px !important;
+           
+         
+            width: 20% !important;
+            color: #000 !important;
+            margin-top:200px;
+          
+        }
+        .contact__form-input {
+ 
+            padding: 1rem !important;
+            width: 100%;
+            font-family: "Montserrat";
+            border: 1px solid #ebebeb;
+            font-size: 1rem;
+            letter-spacing: 0px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            font-weight: 400 !important;
+        }
+        .dw{
+            height: 50px;
+            width: 50px;
+           margin-left:40% !important;
+           
+         
+             -webkit-animation: action 1s infinite  alternate;
+             animation: action 1s infinite  alternate;
+         }
+        .aboutme{
+            height: auto !important; 
+            background-size: cover; 
+            align-content: center;
+            justify-content: space-between;
+        }
+        .contactme{
+            margin-left: 0% !important;
+          
+              }
+              .contactmebtn{
+                margin-left: 10% !important;
+                width:50% !important;
+                padding:1rem !important;
+                margin-top: 3.35rem!important;
+            }
+            .arrow{
+                
+                margin-left: 6% !important;
+                margin-top: 10% !important;
+            
+            }
+            
+        .card{
+            border:1.5px solid rgba(0, 0, 0, .125) !important;
+            border-radius: 10px !important;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 5px 0px;
+        height: 100% !important;
+        width: 100% !important;
+   
+          
+        }
+        .hero_desc {
+            font-size: 1rem !important;
+        }
+        .portfolio{
+            height: auto !important; 
+            background-size: cover; 
+            align-content: center;
+            justify-content: space-between;
+        }
+        
+        .techskills{
+            background: url('images/parallelbakg.png');
+            height: auto !important; 
+            background-size: cover; 
+            align-content: center;
+            height: 100vh;
+      
+            position: relative;
+            background-repeat: no-repeat;
+        }
+        .maincontainer{
+            max-width: 100%;
+            height: auto !important;
+        }
+        }
+    body.dark {
+        background-color: #292c35;
+    }
+    /* #9b59b6 */
+    
+    body.dark h1,
+    body.dark h2,
+    body.dark li,
+    body.dark p,
+
+    body.dark label,
+    body.dark .support a {
+        color: #fff;
+    }
+    .whitebackgrnd{
+        color: #000 !important;
+      
+    }
+  
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+    .navbar{
+        padding-bottom: 0rem !important;
+    }
+   .resume{
+    margin-top: -13px;
+   }
+ .p1{
+    text-align: center;
+ }
+    ul {
+        list-style: none;
+       
+      }
+      li{
+        padding-bottom: 15px !important;
+      }
+     .navtitle ul li:before {
+        content: '\2714\0020';
+    
+      }
+      .title{
+        padding-bottom: 15px !important;
+      }
+    .checkicon{
+        width: 5px !important;
+        height: 5px !important;
+
+    }
+    .checkbox-label {
+        background-color: #198754;
+        width: 50px;
+        height: 26px;
+        border-radius: 50px;
+        position: relative;
+        padding: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+   
+    .checkbox-label .ball {
+        background-color: #fff;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+    }
+    
+    .checkbox:checked+.checkbox-label .ball {
+        transform: translateX(24px);
+    }
+
+    
+
+    /* Alertbox css */
+    
+    #confirm {
+        display: none;
+        background-color: #198754;
+        color: #F3F5F6;
+        border: 1px solid #aaa;
+        position: fixed;
+        width: 300px;
+        height: 120px;
+        left: 40%;
+        top: 40%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    #confirm button {
+        background-color: #FFFFFF;
+        display: inline-block;
+        border-radius: 12px;
+        padding: 5px;
+        text-align: center;
+        width: 60px;
+        cursor: pointer;
+    }
+    
+    #confirm .message {
+        text-align: left;
+        padding: 10px 30px;
+    }
+    .bgkzartimage {
+        height: 20vh;
+        background: url('images/ketzartbackground.png');
+        background-size: cover;
+        position: relative;
+    }
+    /* hero background image */
+    
+    .bgimage {
+        height: 100vh;
+        background: url('images/background.png');
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+    
+    }
+
+    .aboutme{
+        height: 100vh; 
+    
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+      align-content: center;
+    }
+    .portfolio{
+        height: 100vh; 
+        background-size: cover; 
+        align-content: center;
+    }
+    
+    .techskills{
+        background: url('images/parallelbakg.png');
+        height: 100vh; 
+        background-size: cover; 
+        align-content: center;
+    }
+    /* text css above hero image*/
+    .p{
+        text-align: justify !important;
+        text-justify: inter-word;
+    }
+.card-text{
+    text-align: center !important; 
+}
+.imgportfolio{
+
+        border-radius: 10px !important;
+     
+ 
+      
+}
+.card{
+    border:1.5px solid rgba(0, 0, 0, .125) !important;
+    border-radius: 10px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 5px 0px;
+height: 100%;
+  
+}
+.card-body{
+    padding: 3.5rem 1rem !important;
+}
+.card-img-top{
+    border-radius: 10px !important; 
+}
+.uparrow{
+    font-size: 36px;
+  
+
+    width: 100% !important;
+    color: #000 !important;
+}
+.arrow{
+    left: 0px;
+    margin-left: 85%;
+
+}
+
+
+    .hero_title {
+        font-size: 1.5rem;
+    }
+    
+    .hero_desc {
+        font-size: 1.3rem;
+        text-align: justify !important;
+
+        
+    }
+    b {
+        font-weight: bold;
+      }
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    
+    
+    #contact {
+        padding-bottom: 4rem;
+    }
+    /* about section image css */
+    
+    .imageAboutPage {
+        width: 100%;
+    }
+    /* services section css */
+    .cont:hover > .card{
+        cursor: pointer;
+        transform: rotateY(180deg);
+    }
+    .servicesText.card {
+        height: 550px !important;
+        cursor: pointer;
+   
+    }
+   
+    
+    .servicesIcon {
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .card-title {
+        text-align: center;
+    }
+    h1{
+        font-size: 2.0rem !important;
+    }
+    .card:hover .servicesIcon {
+        /* color: #008000; */
+    }
+    
+    .servicesText:hover {
+        /* border: 1px solid #008000; */
+    }
+    /* social media icons styling */
+    
+    .social-icons {
+        font-size: 36px;
+        cursor: pointer;
+    }
+    
+   
+    
+    .fab {
+        color: #000000;
+    }
+    /* footer styling */
+    
+    #footer {
+        background-color: #808080;
+        text-align: center;
+      
+    }
+    .ketzartimg{
+        width: 50%;
+        height:50%;
+        align-content: center;
+        text-align: center;
+        margin-left: 270px;
+    }
+    .artbio{
+     max-width: 100%;
+    }
+    .skills__skill {
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: 1.2rem;
+        background: rgba(153, 153, 153, 0.2);
+        border-radius: 5px;
+        font-weight: 600;
+        color: #666;
+    }
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-details__content {
+        padding: 2rem 0;
+        max-width: 90rem;
+        margin: auto;
+    }
+    .project-details__content-main {
+        width: 100%;
+        max-width: 70rem;
+        margin: auto;
+    }
+    .project-details__tools-used {
+        margin: 0 0 7rem 0;
+    }
+    .project-details__content-title {
+        /* font-weight: 700;
+        font-size: 1.8rem; */
+        margin-bottom: 2.5rem;
+    }
+    .project-btn{
+        width: 16%;
+        margin-right: 2% !important;
+        padding: 0.75rem !important;
+    }
+    .project-btnfg{
+        width: 18%;  
+        margin-right: 2% !important;
+        padding: 0.75rem !important;
+    }
+    .project_desc{
+        text-align: justify;
+        max-width: 70rem;
+        margin: auto;
+    }
+    .scene{
+        position: relative;
+        height: 12vh;
+        width: 100%;
+     
+        background: linear-gradient(#d8c8f9,#fff);
+    }
+     .scenehc{
+        position: relative;
+        height: 12vh;
+        width: 100%;
+     
+        background: linear-gradient(lavenderblush,#fff);
+    }
+    .scenecp{
+        position: relative;
+        height: 12vh;
+        width: 100%;
+     
+        background: linear-gradient(#8BAF90,#fff);
+    }
+    .dark .scene{
+        background: #222833 !important;
+  
+    }
+    .dark{
+        background: #222833 !important;  
+    }
+    .sun{
+        position: absolute;
+        top: 100px;
+        left:55%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 50px #fff;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .dark .sun{
+ left:45%;
+ box-shadow: 0 0 0 #fff;
+
+    }
+    .dark .sun::before{
+        contain: '';
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 100%;
+        height: 100%;
+        background: #222833;
+          height: 30vh;
+        border-radius: 50%;
+        box-shadow: 0 0 0px #fff;
+    }
+    .bg{
+        position: absolute;
+        bottom: 67px;
+        width: 100%;
+     
+        height: 280px;
+        background: url('images/gallery.png');
+        background-size: 500px;
+        background-repeat: no-repeat;
+      margin-left: 981px;
+    }
+    .aboutmetxt{
+        text-align: justify !important;
+     
+    }
+    .contactme{
+  margin-left: 25%;
+
+    }
+    .contactmebtn{
+        margin-left: 241px;
+        width:50% !important;
+        padding:1rem !important;
+        margin-top: 3.35rem!important;
+    }
+    .txtarea{
+        height: 12rem !important;
+    }
+    .contactmetxt{
+        font-family:  "Montserrat" !important;
+     
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        font-weight: 200;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        display: block;
+        text-align: left;
+    }
+    .cpimg{
+        width: 100%;
+        height: 100vh;
+        background: url('images/Artistbioapp.png');
+        background-size: cover;
+        position: relative;
+    
+    }
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.form-control{
+    border: 1.5px solid #ced4da !important;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+  }
+  .banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .banner-name {
+    position: absolute;
+    top: 1% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+  }
+  .banner-text {
+    position: absolute;
+    top: 220% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow to text */
+  }
+
+  .multitext{
+    text-transform: capitalize;
+  }
+  .typed-cursor{
+    color: #000 !important;
+    font-size: 50px !important;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .lineUp {
+    animation: 2s anim-lineUp ease-out ;
+  }
+  .formcontainer{
+    margin-top: 31px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 29px 0px;
+    background: white;
+    padding: 4rem;
+
+    max-width: 80rem;
+    text-align: right;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5rem auto 0 auto;
+  }
+
+  .contact__form-input {
+ 
+    padding: 1.5rem;
+    width: 100%;
+    font-family: "Montserrat";
+    border: 1px solid #ebebeb;
+    font-size: 1rem;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.main-footer__lower {
+    padding: 1.4 rem;
+   
+    border-top: 1px solid #444;
+    background-color: #000;
+    color: #eee;
+    font-size: 1.2rem;
+    text-align: left;
+    text-align: center;
+}
+.main-footer__icon{
+    width: 20px;
+    height: 20px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  #snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #198754;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 150px;
+    font-size: 17px;
+  }
+ 
+  .readbtn{
+    padding: 0.75rem !important;
+  }
+
+
+  .downarrow{
+    font-size: 25px;
+    position: absolute;
+    top: 7px;
+   
+ 
+    width: 20% !important;
+    color: #000 !important;
+    margin-top:200px;
+  
+}
+.dw{
+   height: 50px;
+   width: 50px;
+  margin-left:50% ;
+  
+
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+} 
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  .nametxt{
+   font-size: 45px;
+   color: #000!important;
+   padding-top: 10px !important;
+   text-shadow: none;
+  }
+  .posttxt{
+    font-size: 35px;color: #000 !important;padding-top: 10px  !important;text-shadow: none;
+  }
+  .taglinetxt{
+    font-size: 24px;color: #000 !important;padding-top: 12px !important;text-shadow: none;
+  }
